@@ -8,9 +8,10 @@ ghidra
 1.91 Bindings:
 
 PlayLayer:
-destroyPlayer
-getOtherPlayer
-playExitDualEffect
-shakeCamera
-showHint
-showNewBest
+
+destroyPlayer <br>
+getOtherPlayer <br>
+playExitDualEffect <br>
+shakeCamera <br>
+showHint <br>
+showNewBest <br>
