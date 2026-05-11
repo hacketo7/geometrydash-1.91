@@ -6374,7 +6374,7 @@ class PlayLayer : cocos2d::CCLayer, CCCircleWaveDelegate, GameplayDelegate {
 	void createObjectsFromSetup(gd::string) = win 0xe81c0;
 	TodoReturn createParticle(int, char const*, int, cocos2d::tCCPositionType);
 	void delayedResetLevel() = win 0xf1f10;
-	void destroyPlayer(PlayerObject*) = win 0xf04a0;
+	void destroyPlayer(PlayerObject*) = win 0xee990;
 	TodoReturn enterDualMode(GameObject*, bool);
 	TodoReturn exitAirMode();
 	TodoReturn exitBirdMode(PlayerObject*);
@@ -6399,7 +6399,7 @@ class PlayLayer : cocos2d::CCLayer, CCCircleWaveDelegate, GameplayDelegate {
 	TodoReturn getMinPortalY();
 	TodoReturn getMixedColor(cocos2d::ccColor3B, cocos2d::ccColor3B, float);
 	TodoReturn getObjColor();
-	TodoReturn getOtherPlayer(PlayerObject*);
+	TodoReturn getOtherPlayer(PlayerObject*) = win 0xee170;
 	TodoReturn getParticleKey(int, char const*, int, cocos2d::tCCPositionType);
 	TodoReturn getParticleKey2(gd::string);
 	TodoReturn getRelativeMod(cocos2d::CCPoint, float, float, float);
@@ -6421,7 +6421,7 @@ class PlayLayer : cocos2d::CCLayer, CCCircleWaveDelegate, GameplayDelegate {
 	void pickupItem(GameObject*) = win 0xee080;
 	TodoReturn playEndAnimationToPos(cocos2d::CCPoint);
 	TodoReturn playerWillSwitchMode(PlayerObject*, GameObject*);
-	TodoReturn playExitDualEffect(PlayerObject*);
+	TodoReturn playExitDualEffect(PlayerObject*) = win 0xed930;
 	TodoReturn playFlashEffect(float, int, float);
 	TodoReturn playGravityEffect(bool);
 	TodoReturn playSpeedParticle(float);
@@ -6456,12 +6456,12 @@ class PlayLayer : cocos2d::CCLayer, CCCircleWaveDelegate, GameplayDelegate {
 	}
 	TodoReturn setupLevelStart(LevelSettingsObject*);
 	void setupReplay(gd::string);
-	TodoReturn shakeCamera(float) = win 0xe61c0;
+	TodoReturn shakeCamera(float) = win 0xe46f0;
 	TodoReturn showCompleteEffect();
 	TodoReturn showCompleteText();
 	void showEndLayer();
-	TodoReturn showHint() = win 0xf0800;
-	void showNewBest() = win 0xe5ff0;
+	TodoReturn showHint() = win 0xeecf0;
+	void showNewBest() = win 0xe4520;
 	void showRetryLayer();
 	TodoReturn showTwoPlayerGuide();
 	TodoReturn spawnCircle();
