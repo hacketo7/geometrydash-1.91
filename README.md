@@ -5,7 +5,7 @@ im currently trying to mod this version and my findings will be here
 tools im using (to be updated):
 ghidra
 
-1.91 Bindings:
+1.91 Bindings in GeometryDash.bro:
 
 PlayLayer:
 
